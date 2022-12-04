@@ -19,8 +19,8 @@ public class ZipFileTest {
 
     @Test
     void zipParseTest() throws Exception {
-        try ( InputStream is = cl.getResourceAsStream("example/desktop.zip");
-              ZipInputStream zis = new ZipInputStream(is)
+        try ( InputStream zipFile = cl.getResourceAsStream("example/desktop.zip");
+              ZipInputStream zis = new ZipInputStream(zipFile)
                 ) {
             ZipEntry entry;
             while ((entry = zis.getNextEntry())!=null){
