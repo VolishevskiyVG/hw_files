@@ -27,4 +27,6 @@ public class TestJson {
             assertThat(personJsonParse.phoneNumbers.get(0).number).isEqualTo("7349282382");
 
         }
-    }}
+    }
+}
+

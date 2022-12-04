@@ -7,8 +7,9 @@ public class PersonJsonParse {
     public String lastName;
     public String gender;
     public int age;
-    public List<phoneNumbers> phoneNumbers;
-    public static class  phoneNumbers {
+    public List<PhoneNumbers> phoneNumbers;
+
+    public static class PhoneNumbers {
         public String type;
         public String number;
 
